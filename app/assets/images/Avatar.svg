@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="85px" viewBox="0 0 84 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="38" cy="38" r="38"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(4.000000, 0.000000)">
+            <g id="Group-3" transform="translate(0.000000, 5.000000)">
+                <path d="M37.5,10 L61,24 L61,52 L37.5,66 L14,52 L14,24 L37.5,10 Z M37.5381003,12.4717241 L38.7302317,35.9085208 L58.9964661,25.2554314 L58.9964661,50.822846 L37.5381003,63.6065533 L36.3459689,40.1697566 L16.0797345,50.822846 L16.0797345,25.2554314 L37.5381003,12.4717241 Z" id="Logo-Copy-2" fill="#E0E0E0"></path>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#EEEEEE" stroke-width="7" xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <circle id="Oval-2" fill="#FF5722" cx="62" cy="11" r="11"></circle>
+        </g>
+    </g>
+</svg>
