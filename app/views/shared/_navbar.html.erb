@@ -8,7 +8,7 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+    <%= link_to "Products", products_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Text link -->
     <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
@@ -26,7 +26,7 @@
     </div>
 
     <!-- Button (call-to-action) -->
-    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Submit</a>
+    <%= link_to "SUBMIT", new_product_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
   </div>
 
   <!-- Dropdown appearing on mobile only -->

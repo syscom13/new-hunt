@@ -1,0 +1,48 @@
+.form {
+  margin-top: 130px;
+}
+
+.wagon-button {
+  margin-top: 20px;
+  padding: 0 20px;
+  border-radius: 3px;
+  line-height: 40px;
+  background-color: $orange;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+  border: 2px solid $orange;
+}
+
+.wagon-button-green {
+  padding: 10px 20px !important;
+  border-radius: 3px;
+  line-height: 40px;
+  background-color: $green;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
+  border: 2px solid $green;
+  transition: all 0.335s ease;
+}
+.wagon-button:hover, .wagon-button:active {
+  color: white;
+  background: #EE3900;
+  border-color: #EE3900;
+}
+
+.wagon-button-green:link, .wagon-button-green:visited{
+  color: white;
+  background: $green;
+  border-color: $green;
+  text-decoration: none;
+}
+
+.wagon-button-green:hover, .wagon-button-green:active {
+  color: $green;
+  background: white;
+  border-color: white;
+  text-decoration: none;
+}

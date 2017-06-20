@@ -1,0 +1,7 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name, label: 'Product name', placeholder: 'Bonsai'  %>
+  <%= f.input :url, label: 'Product url', placeholder: 'hellobonsai.com'  %>
+  <%= f.input :tagline, label: 'Tagline', placeholder: 'Bulletproof contracts, e-signing, & invoices.' %>
+  <%= f.input :category, collection: %w[tech education design], prompt: "Select a category" %>
+  <%= f.button :submit, "SUBMIT", class: "wagon-button" %>
+<% end %>

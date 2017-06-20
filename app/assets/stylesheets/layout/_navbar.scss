@@ -61,7 +61,7 @@
   box-shadow: rgba(23,43,99,0.24) 0 7px 28px;
   border: 2px solid $orange;
 }
-.navbar-wagon-button:hover {
+.navbar-wagon-button:hover, .wagon-button:active {
   color: white;
   background: #EE3900;
   border-color: #EE3900;

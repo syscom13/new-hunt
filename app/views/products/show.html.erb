@@ -1,0 +1,18 @@
+<div class="show">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="card">
+          <div class="card-category"><%= @product.category %></div>
+          <%= link_to "Edit", edit_product_path(@product), class: "card-edit btn btn-primary" %>
+          <%= link_to "Delete", product_path(@product), method: :delete, class: "card-delete btn btn-danger" %>
+          <div class="card-description">
+            <h2><%= @product.name %></h2>
+            <p><%= @product.tagline %></p>
+            <%= link_to "GET IT", @product.url, target: :_blank, class: "wagon-button-green" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
