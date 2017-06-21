@@ -9,6 +9,7 @@
           <div class="card-description">
             <h2><%= @product.name %></h2>
             <p><%= @product.tagline %></p>
+            <p><%= @product.user.email %></p>
             <%= link_to "GET IT", @product.url, target: :_blank, class: "wagon-button-green" %>
           </div>
         </div>

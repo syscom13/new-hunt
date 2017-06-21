@@ -66,6 +66,22 @@
   background: #EE3900;
   border-color: #EE3900;
 }
+.navbar-wagon-button-alt {
+  margin-left: 10px;
+  padding: 0 20px;
+  border-radius: 3px;
+  line-height: 40px;
+  background-color: transparent;
+  color: #888;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #888;
+}
+.navbar-wagon-button-alt:hover, .wagon-button-alt:active {
+  color: #888;
+  background: transparent;
+  border-color: #888;
+}
 
 /* Navbar search form */
 .navbar-wagon-search {

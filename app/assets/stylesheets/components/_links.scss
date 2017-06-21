@@ -1,0 +1,19 @@
+.links {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  text-decoration: none;
+}
+.first {
+  margin-top: 20px;
+}
+
+.links:link, .links:visited {
+  color: #888;
+  text-decoration: none;
+}
+
+.links:active, .links:hover {
+  color: #888;
+  text-decoration: none;
+}

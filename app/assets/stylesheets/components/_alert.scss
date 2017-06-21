@@ -3,7 +3,9 @@
 * ------------------------------------- */
 
 .alert {
-  margin: 0;
+  position: absolute;
+  top: 85px;
+  right: 10px;
   text-align: center;
   color: white;
 }
