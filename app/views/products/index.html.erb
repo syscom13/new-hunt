@@ -20,29 +20,53 @@
     </div>
     <div class="col-xs-12 col-sm-9">
       <!-- <h1 class="text-center">Products</h1> -->
+
       <% @products.each do |product| %>
-        <div class="product">
-          <%= link_to "", product_path(product), class: "card-link-product" %>
+      <div class="product">
+        <%= link_to "", product_path(product), class: "card-link-product" %>
+        <% if user_signed_in? %>
+          <% if current_user.voted_for?(product) %>
+
+            <%= link_to upvote_path(current_user.upvotes.where(product: product).first), method: :delete, class: 'product-upvote product-upvoted' do %>
+              <div class="product-arrow"></div>
+              <div class='product-count'>
+                <%= product.upvotes.size %>
+              </div>
+            <% end %>
+          <% else %>
+            <%= link_to upvotes_path(product_id: product.id), method: :post, class: 'product-upvote' do %>
+              <div class="product-arrow"></div>
+              <div class='product-count'>
+                <%= product.upvotes.size %>
+              </div>
+            <% end %>
+          <% end %>
+
+        <% else %>
           <div class='product-upvote'>
             <div class="product-arrow"></div>
-            <div class='product-count'>95</div>
+            <div class='product-count'>
+              <%= product.upvotes.size %>
+            </div>
           </div>
-          <div class='product-body'>
-            <h3><%= product.name %></h3>
-            <p><%= product.tagline %></p>
-          </div>
-          <ul class="list-inline product-controls hidden-sm hidden-xs">
-            <%= link_to product_path(product) do %>
-              <i class="fa fa-eye"></i>
-            <% end %>
-            <%= link_to edit_product_path(product) do %>
-              <i class="fa fa-pencil"></i>
-            <% end %>
-            <%= link_to product_path(product), method: :delete do %>
-              <i class="fa fa-trash"></i>
-            <% end %>
-          </ul>
+        <% end %>
+        
+        <div class='product-body'>
+          <h3><%= product.name %></h3>
+          <p><%= product.tagline %></p>
         </div>
+        <ul class="list-inline product-controls hidden-sm hidden-xs">
+          <%= link_to product_path(product) do %>
+          <i class="fa fa-eye"></i>
+          <% end %>
+          <%= link_to edit_product_path(product) do %>
+          <i class="fa fa-pencil"></i>
+          <% end %>
+          <%= link_to product_path(product), method: :delete do %>
+          <i class="fa fa-trash"></i>
+          <% end %>
+        </ul>
+      </div>
       <% end %>
     </div>
   </div>

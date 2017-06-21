@@ -44,6 +44,15 @@
   font-size: 13px;
   line-height: 20px;
 }
+a.product-upvote {
+  color: black;
+}
+.product-upvoted, a.product-upvote.product-upvoted {
+  color: $blue;
+}
+.product-upvoted .product-arrow {
+  border-bottom-color: $blue;
+}
 .product-count {
   margin: 2px 0 0;
 }
@@ -92,6 +101,9 @@
 }
 .product-upvote-upvoted .product-arrow {
   border-bottom-color: #5898f1;
+}
+a.product-upvote:hover, a.product-upvote:focus {
+  text-decoration: none;
 }
 // .product:hover .product-upvote { transform: scale(1.2) }
 .product:hover .product-controls-hidden a { color: #E6E6E6 }

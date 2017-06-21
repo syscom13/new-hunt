@@ -10,8 +10,7 @@
             <h2><%= @product.name %></h2>
             <p><%= @product.tagline %></p>
             <% if @product.user %>
-              <p>Hunter: </p>
-              <p><%= @product.user.email %></p>
+              <p>Hunter: <%= @product.user.email %></p>
             <% end %>
             <%= link_to "GET IT", @product.url, target: :_blank, class: "wagon-button-green" %>
           </div>
